@@ -42,6 +42,12 @@ inst.Init_Conversation_Memory('ABC', True)
   (4.) 주의사항. 함수의 인자는 1개가 고정입니다. 타입은 str이며, (3)항목에서 요구하는 인수값에 따라 천차만별달라지므로, 정확하게 인수값을 모델이 전달해야할지 작성해야합니다!<br>
 
 ```python
+# 2. 도구 설정
+def add(query: str) -> str:
+    query = query.split(',')
+    print('add함수 호출됨@', query)
+    return f"result: {int(query[0]) + int(query[1])}"
+
 inst.Add_Agent_Tool('ABC', 'add', add, '3개의 인자를 모두 더하는 함수. 만약 인수가 부족하면, 나머지는 0으로 패딩하여 호출하라.')
 ```
 
