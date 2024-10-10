@@ -46,9 +46,9 @@ inst.Init_Conversation_Memory('ABC', True)
 def add(query: str) -> str:
     query = query.split(',')
     print('add함수 호출됨@', query)
-    return f"result: {int(query[0]) + int(query[1])}"
+    return f"result: {int(query[0]) + int(query[1]) + int(query[2])}"
 
-inst.Add_Agent_Tool('ABC', 'add', add, '3개의 인자를 모두 더하는 함수. 만약 인수가 부족하면, 나머지는 0으로 패딩하여 호출하라.')
+inst.Add_Agent_Tool('ABC', 'add', add, '최소 3개 이상의 인자를 모두 더하는 함수. 만약 인수가 부족하면, 나머지는 0으로 패딩하여 호출하라.')
 ```
 
 <br>
