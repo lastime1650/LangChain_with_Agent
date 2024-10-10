@@ -100,7 +100,7 @@ Final Answer: You asked me to add 1 and 5.
 여기서 저는 몇가지 배운것이 있었습니다. 
 
 - (간소화된)방식: InitializeAgent (1개)
-- (상세한)방식: create_react_agent -> AgentExecutor (2개)
+- (상세한)방식: create_react_agent -> AgentExecutor (2개) <추천 + 이 프로젝트에 사용된 방식>
 
 크게 위 2가지 방식을 사용할 수 있는데, 각자마다 장단점이 있습니다. 
 
