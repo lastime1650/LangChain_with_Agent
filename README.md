@@ -57,7 +57,7 @@ Add_Agent_Tool 메서드의 3번쨰 인수 값으로 넣은 함수의 인자는 
 
 <br>
 
-5. Set_Prompt메서드는, 미리 지정한 프롬프트에 생성합니다. 
+5. Set_Prompt메서드는, 미리 지정한 프롬프트를 등록합니다. (수정원하면 직접 코드 바꿔서 프롬프트 수정해야합니다.)
 ```python
 inst.inst.Set_Prompt('ABC')
 ```
