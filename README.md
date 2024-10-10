@@ -71,8 +71,22 @@ inst.Set_Agent('ABC')
 ```python
 r = inst.Start_Agent_Conversation('ABC', '1+5 더하라')['output']
 print(r)
+'''
+Thought: I need to use the add tool to calculate the sum.
+Action: add
+Action Input: 1, 5, 0add함수 호출됨@ ['1', ' 5', ' 0']
+result: 6Thought: I now know the final answer
+Final Answer: 6 
+'''
+
+
 r = inst.Start_Agent_Conversation('ABC', '처음에 내가 무슨 값을 더하라고 했지?')['output']
 print(r)
+'''
+Thought: The user is asking about a previous calculation. We need to look back at the conversation history.Invalid Format: Missing 'Action:' after 'Thought:Question: 처음에 내가 무슨 값을 더하라고 했지?
+Thought: The user is asking about a previous calculation. We need to look back at the conversation history.  The first question was "1+5 더하라"
+Final Answer: You asked me to add 1 and 5. 
+'''
 ```
 
 <br>
